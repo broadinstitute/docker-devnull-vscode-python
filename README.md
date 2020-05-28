@@ -1,6 +1,6 @@
-# broadinstitute/docker-devnull-python
+# broadinstitute/docker-devnull-vscode-python
 
-## What is devnull-python
+## What is devnull-vscode-python
 
 This is a multipurpose [Docker][1] image for the **/dev/null** team to use when developing [Python][3] applications.  This image is not meant as a base image to be inherited from.  Instead, it is to be used with something like [VS Code][2] to act as a base [Python][3] image to in which to run code while developing and testing.
 

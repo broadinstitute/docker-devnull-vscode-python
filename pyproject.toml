@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "docker-devnull-vscode-python"
-version = "0.1.0"
+version = "0.1.1"
 description = "Docker container for use with VS Code for the /dev/null team"
-license = "BSD"
+license = "BSD-3-Clause"
 authors = ["Andrew Teixeira <teixeira@broadinstitute.org>"]
 readme = "README.md"
 repository = "https://github.com/broadinstitute/docker-devnull-vscode-python"
@@ -11,7 +11,7 @@ keywords = ["docker", "vscode", "python"]
 
 [tool.poetry.dependencies]
 python = "^3.6"  # Compatible python versions must be declared here
-toml = "^0.9"
+toml = ">= 0.9"
 # Python specific dependencies with prereleases allowed
 black = { version = "^19.0", allow-prereleases = true }
 # Git dependencies

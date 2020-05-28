@@ -16,8 +16,9 @@ COPY pyproject.toml poetry.lock /tmp/
 COPY --from=shellcheck /bin/shellcheck /bin/shellcheck
 
 RUN apk update \
-    && apk add bash bind-tools curl dialog g++ gcc git iproute2 libffi-dev libssl1.1 \
-        libxml2-dev libxslt-dev make musl-dev openssh-client openssl-dev procps sudo \
+    && apk add bash bind-tools curl dialog g++ gcc git gnupg iproute2 libffi-dev \
+        libssl1.1 libstdc++ libxml2-dev libxslt-dev make musl-dev openssh-client \
+        openssl-dev procps sudo \
     && pip install poetry \
     && cd /tmp \
     && poetry config virtualenvs.create false \
